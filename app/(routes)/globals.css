@@ -27,3 +27,8 @@ html {
   width: stretch;
   margin: 30px;
 }
+
+nav {
+  @apply text-[#607B96];
+  @apply text-base;
+}
