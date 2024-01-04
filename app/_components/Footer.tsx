@@ -4,8 +4,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" w-full h-[50px] border border-transparent border-t-borderColor ">
-      <nav className=" w-full flex flex-row min-h-[50px]">
+    <footer className=" w-full h-[40px] border border-transparent border-t-borderColor ">
+      <nav className=" w-full flex flex-row min-h-[40px]">
         <Link
           className="pointer-events-none px-6 flex items-center justify-center basis-1/8 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
           href={"/"}

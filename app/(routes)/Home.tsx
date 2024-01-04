@@ -1,6 +1,3 @@
-import Image from "next/image";
-import SnakeGame from "../_components/SnakeGame";
-
 export default function Home() {
   return (
     <div className="w-full h-full flex flex-row items-center justify-between">
@@ -36,7 +33,7 @@ export default function Home() {
         </div>
       </div>
       <div className="basis-1/3 h-full  flex flex-grow flex-col items-center justify-center">
-        <SnakeGame />
+        <div className="h-[425px] w-[457px] rounded-lg border  bg-gradient-to-br from-teal-900 to-emerald-400  shadow-inner  border-neutral-900 backdrop-blur-3xl"></div>
       </div>
       <div className="w-[45px] h-full "></div>
     </div>
