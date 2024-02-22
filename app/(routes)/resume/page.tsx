@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import SplashScreen from "@/app/_components/SplashScreen";
 
 const ResumePage = () => {
   const router = useRouter();
@@ -25,10 +26,18 @@ const ResumePage = () => {
     };
 
     fetchLocationData();
-    window.location.href =
-      "https://drive.google.com/file/d/1y26oBuZnJl2di3HC89FwlBrBV2AMQtLz/view?usp=sharing";
-  }, []);
 
+    // window.location.href =
+    //   "https://drive.google.com/file/d/1y26oBuZnJl2di3HC89FwlBrBV2AMQtLz/view?usp=sharing";
+  }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href =
+        "https://drive.google.com/file/d/1y26oBuZnJl2di3HC89FwlBrBV2AMQtLz/view?usp=sharing";
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   useEffect(() => {
     // Extract query parameters
     // const { tag } = router.query;
@@ -43,11 +52,7 @@ const ResumePage = () => {
     locationData,
   ]);
 
-  return (
-    <div>
-      <h1>Resume</h1>
-    </div>
-  );
+  return <SplashScreen />;
 };
 
 export default ResumePage;
