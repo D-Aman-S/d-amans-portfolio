@@ -13,10 +13,10 @@ export default function Home() {
         </div>{" "}
         <div className="h-[60px]"></div>
         <div className="text-[#607B96] text-[14x]">
-          // complete the game to continue
+          <span>// complete the game to continue</span>
         </div>
         <div className="text-[#607B96] text-[14x]">
-          // you can also see it on my Github page
+          <span> // you can also see it on my Github page</span>
         </div>
         <div className="mt-2">
           <span className="text-indigo-600 text-[14px] font-medium">const</span>

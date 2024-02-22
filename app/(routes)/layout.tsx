@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 
-const firaCode = Fira_Code({ subsets: ["latin"] });
+const firaCode = Fira_Code({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
