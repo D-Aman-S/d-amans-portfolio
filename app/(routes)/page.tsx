@@ -1,3 +1,4 @@
+/*eslint react/jsx-no-comment-textnodes: "off"*/
 import Image from "next/image";
 import SnakeGame from "../_components/SnakeGame";
 
