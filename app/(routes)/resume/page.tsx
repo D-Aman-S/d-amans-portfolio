@@ -33,7 +33,7 @@ const ResumePage = () => {
     const timer = setTimeout(() => {
       window.location.href =
         "https://drive.google.com/file/d/1y26oBuZnJl2di3HC89FwlBrBV2AMQtLz/view?usp=sharing";
-    }, 30000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
