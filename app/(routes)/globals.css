@@ -28,6 +28,12 @@ html {
   margin: 30px;
 }
 
+@media (max-width: 400px) {
+  html {
+    margin: 12.5px; /* Adjusted margin for smaller screens */
+  }
+}
+
 nav {
   @apply text-[#607B96];
   @apply text-sm;
@@ -40,4 +46,74 @@ h4,
 h5,
 h6 {
   @apply text-white;
+}
+
+/* mobile blur containers */
+.css-blurry-gradient-blue {
+  position: fixed;
+  bottom: 25%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 0% 50% 50%;
+  rotate: 10deg;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.css-blurry-gradient-green {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 50% 0% 50%;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+  opacity: 0.5;
+  z-index: 10;
+}
+
+/* pc blur containers */
+.css-blurry-gradient-blue1 {
+  position: fixed;
+  bottom: 23%;
+  right: 2%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 0% 50% 50%;
+  rotate: 10deg;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.css-blurry-gradient-blue2 {
+  position: fixed;
+  bottom: 12%;
+  right: 13%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 0% 50% 50%;
+  rotate: 10deg;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.css-blurry-gradient-green1 {
+  position: absolute;
+  top: 35%;
+  right: 18%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 50% 0% 50%;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+  opacity: 0.5;
+  z-index: 10;
 }

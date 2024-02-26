@@ -19,6 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={firaCode.className}>
+        <div className="hidden pc:block css-blurry-gradient-blue1"></div>
+        <div className="hidden pc:block css-blurry-gradient-blue2"></div>
+        <div className="hidden pc:block css-blurry-gradient-green1"></div>
+
+        {/* for mobile */}
+        <div className="pc:hidden css-blurry-gradient-blue"></div>
+        <div className="css-blurry-gradient-green"></div>
         <div
           className="flex flex-col items-center justify-between w-full h-full 
             bg-mainDivColor rounded-lg border border-borderColor overflow-hidden"

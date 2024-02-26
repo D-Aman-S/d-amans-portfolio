@@ -5,15 +5,18 @@ import SnakeGame from "../_components/SnakeGame";
 export default function Home() {
   return (
     <div className="w-full h-full flex flex-row items-center justify-between">
-      <div className="basis-1/6 h-full"></div>
-      <div className="flex flex-col justify-center basis-1/3 h-full">
+      <div className="hidden pc:flex basis-1/6 h-full"></div>
+
+      <div className=" px-3 sm:px-5 flex flex-col justify-center pc:basis-1/3 h-full pc:p-0">
         <p className="text-[#e5e9f0] text-lg ">Hi All, I am</p>
-        <p className="text-[#e5e9f0] text-[62px]/[80px] ">Aman Singh</p>
-        <div className="text-[#4D5BCE] text-[32px]/[42px] ">
+        <p className="text-[#e5e9f0] text-[50px] mobile:text-[62px]/[80px] ">
+          Aman Singh
+        </p>
+        <div className="text-emerald-400 sm:text-[#4D5BCE] text-2xl mobile:text-[32px]/[42px] ">
           &gt; Software developer
         </div>{" "}
-        <div className="h-[60px]"></div>
-        <div className="text-[#607B96] text-[14x]">
+        <div className="h-[250px] mobile:h-[60px]"></div>
+        <div className="hidden pc:flex text-[#607B96] text-[14x]">
           <span>// complete the game to continue</span>
         </div>
         <div className="text-[#607B96] text-[14x]">
@@ -36,10 +39,10 @@ export default function Home() {
           <span className="text-rose-400 text-[14px] font-medium">”</span>
         </div>
       </div>
-      <div className="basis-1/3 h-full  flex flex-grow flex-col items-center justify-center">
+      <div className=" hidden h-full pc:basis-1/3 pc:flex flex-grow flex-col items-center justify-center">
         <SnakeGame />
       </div>
-      <div className="w-[45px] h-full "></div>
+      <div className="hidden pc:w-[45px] h-full "></div>
     </div>
   );
 }

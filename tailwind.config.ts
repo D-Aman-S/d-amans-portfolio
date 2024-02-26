@@ -13,6 +13,11 @@ const config: Config = {
         borderColor: "#1E2D3D",
         mainDivColor: "#011627",
       },
+      screens: {
+        pc: "1080px",
+        mobile: "480px",
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   plugins: [],

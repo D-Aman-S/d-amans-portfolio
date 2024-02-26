@@ -7,14 +7,14 @@ const Footer = () => {
     <footer className=" w-full h-[40px] border border-transparent border-t-borderColor ">
       <nav className=" w-full flex flex-row min-h-[40px]">
         <Link
-          className="pointer-events-none px-6 flex items-center justify-center basis-1/8 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
+          className="pointer-events-none px-1 sm:px-3 pc:px-6 flex items-center justify-center basis-1/8 border border-transparent pc:border-r-borderColor hover:text-white hover:bg-[#0f2031]"
           href={"/"}
         >
           Find me in:
         </Link>
         <Link
           className={
-            "flex items-center justify-center px-4 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
+            "ml-auto pc:ml-0 flex items-center justify-center px-4 border border-transparent border-r-borderColor border-l-borderColor hover:text-white hover:bg-[#0f2031]"
           }
           href={"/"}
         >
@@ -37,14 +37,29 @@ const Footer = () => {
           <Image src={"linkedin.svg"} alt={""} width={26} height={26} />
         </Link>
 
-        <div className="mx-auto"></div>
+        <div className=" hidden pc:block pc:mx-auto"></div>
         <Link
           className={
-            "flex items-center justify-center px-4  border border-transparent border-l-borderColor hover:text-white hover:bg-[#0f2031]"
+            "hidden pc:flex items-center justify-center px-4  pc:border border-transparent border-l-borderColor hover:text-white hover:bg-[#0f2031]"
           }
           href={"https://github.com/D-Aman-S"}
         >
           D-Aman-S{" "}
+          <Image
+            className="mx-2"
+            src={"github.svg"}
+            alt={""}
+            width={26}
+            height={26}
+          />
+        </Link>
+        {/* Showing only icon on mobile */}
+        <Link
+          className={
+            "pc:hidden flex items-center justify-center px-4  pc:border border-transparent border-l-borderColor hover:text-white hover:bg-[#0f2031]"
+          }
+          href={"https://github.com/D-Aman-S"}
+        >
           <Image
             className="mx-2"
             src={"github.svg"}
