@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         borderColor: "#1E2D3D",
         mainDivColor: "#011627",
+        grad1: "rgba(67, 217, 173, 0.13)",
+        grad2: "rgba(35, 123, 109, 1)",
       },
       screens: {
         pc: "1080px",

@@ -5,6 +5,14 @@ import SnakeGame from "../_components/SnakeGame";
 export default function Home() {
   return (
     <div className="w-full h-full flex flex-row items-center justify-between">
+      {/* <div className="hidden pc:block css-blurry-gradient-blue1"></div>
+
+      <div className="hidden pc:block css-blurry-gradient-green1"></div>
+      <div className="hidden pc:block css-blurry-gradient-green-small"></div> */}
+      {/* <div className="hidden pc:block css-blurry-gradient-blue2"></div> */}
+      {/* for mobile */}
+      <div className="pc:hidden css-blurry-gradient-blue"></div>
+      <div className="css-blurry-gradient-green pc:hidden"></div>
       <div className="hidden pc:flex basis-1/6 h-full"></div>
 
       <div className=" px-3 sm:px-5 flex flex-col justify-center pc:basis-1/3 h-full pc:p-0">
@@ -39,7 +47,7 @@ export default function Home() {
           <span className="text-rose-400 text-[14px] font-medium">”</span>
         </div>
       </div>
-      <div className=" hidden h-full pc:basis-1/3 pc:flex flex-grow flex-col items-center justify-center">
+      <div className=" hidden h-full pc:basis-1/3 pc:flex flex-grow flex-col items-center justify-center z-20">
         <SnakeGame />
       </div>
       <div className="hidden pc:w-[45px] h-full "></div>

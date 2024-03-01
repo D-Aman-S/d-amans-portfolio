@@ -48,6 +48,9 @@ h6 {
   @apply text-white;
 }
 
+ {
+  /* TODO: convert to tailwind */
+}
 /* mobile blur containers */
 .css-blurry-gradient-blue {
   position: fixed;
@@ -78,17 +81,18 @@ h6 {
 
 /* pc blur containers */
 .css-blurry-gradient-blue1 {
-  position: fixed;
-  bottom: 23%;
-  right: 2%;
-  width: 300px;
-  height: 300px;
-  border-radius: 0% 0% 50% 50%;
-  rotate: 10deg;
+  position: absolute;
+  left: 258px;
+  top: 32px;
+  rotate: 36deg;
   filter: blur(70px);
   background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
+  width: 200px;
+  height: 450px;
+  opacity: 0.65;
+  border-radius: 100% 50% 100% 0%;
 }
 
 .css-blurry-gradient-blue2 {
@@ -106,14 +110,30 @@ h6 {
 }
 
 .css-blurry-gradient-green1 {
+  background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+  opacity: 0.4;
+  z-index: 10;
   position: absolute;
-  top: 35%;
-  right: 18%;
-  width: 300px;
-  height: 300px;
+  bottom: 118px;
+  right: 142px;
+  filter: blur(65px);
+  rotate: 10deg;
+  width: 400px;
+  height: 400px;
+  border-radius: 100% 0% 0% 0%;
+  rotate: 20deg;
+}
+
+.css-blurry-gradient-green-small {
+  position: absolute;
+  left: 220px;
+  bottom: 205px;
+  width: 200px;
+  height: 200px;
   border-radius: 0% 50% 0% 50%;
   filter: blur(70px);
   background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
+  rotate: 10deg;
 }
