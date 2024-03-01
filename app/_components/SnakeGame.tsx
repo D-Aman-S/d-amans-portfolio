@@ -187,7 +187,7 @@ const SnakeGame = () => {
 
   return (
     <div
-      className="relative"
+      className="relative focus:outline-none"
       ref={gameContainerRef}
       tabIndex={0}
       onKeyDown={handleKeyPress}
