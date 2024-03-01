@@ -48,6 +48,7 @@ const SnakeGame = () => {
   const [score, setScore] = useState<number>(0); //
   const [showCountDown, setShowCountDown] = useState<boolean>(false); // [1, 2, 3
   const gameContainerRef = useRef<HTMLDivElement>(null);
+  const [speed, setSpeed] = useState(36);
   function startgame() {
     setScore(0);
     setGameWon(false);
@@ -130,6 +131,7 @@ const SnakeGame = () => {
     // Check if snake eats food
     if (head.x === food.x && head.y === food.y) {
       generateFood();
+      setSpeed((p) => p + 1);
       setScore((prev) => prev + 1);
       if (score === 9) {
         setGameWon(true);
@@ -145,7 +147,7 @@ const SnakeGame = () => {
 
   useEffect(() => {
     if (!gameOver && gameStarted) {
-      const interval = setInterval(moveSnake, 30); // Adjust snake speed here
+      const interval = setInterval(moveSnake, speed); // Adjust snake speed here
       return () => clearInterval(interval);
     }
   }, [snake, direction, gameStarted, showCountDown]);
