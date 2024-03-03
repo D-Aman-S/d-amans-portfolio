@@ -14,6 +14,7 @@ const config: Config = {
         mainDivColor: "#011627",
         grad1: "rgba(67, 217, 173, 0.13)",
         grad2: "rgba(35, 123, 109, 1)",
+        labelText: "#607B96",
       },
       screens: {
         pc: "1080px",

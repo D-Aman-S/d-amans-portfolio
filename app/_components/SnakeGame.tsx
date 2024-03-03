@@ -48,7 +48,7 @@ const SnakeGame = () => {
   const [score, setScore] = useState<number>(0); //
   const [showCountDown, setShowCountDown] = useState<boolean>(false); // [1, 2, 3
   const gameContainerRef = useRef<HTMLDivElement>(null);
-  const [speed, setSpeed] = useState(36);
+  const [speed, setSpeed] = useState(42);
   function startgame() {
     setScore(0);
     setGameWon(false);
@@ -317,7 +317,6 @@ const SnakeGame = () => {
                     ) {
                       const headRadius = "5px";
                       headRadiusClasses = "";
-                      console.log("direction", direction);
                       switch (direction) {
                         case "UP":
                           headRadiusClasses += "rounded-tl-lg rounded-tr-lg";
