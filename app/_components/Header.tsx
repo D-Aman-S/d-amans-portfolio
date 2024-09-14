@@ -10,7 +10,7 @@ const Header = () => {
     <header className="flex flex-row items-center w-full h-[45px] border border-transparent border-b-borderColor ">
       <nav className=" w-full flex flex-row min-h-[45px]">
         <Link
-          className="flex items-center justify-center px-4 pc:basis-1/6 pc:border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
+          className="flex items-center justify-center px-4 pc:w-72 pc:border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
           href={"/"}
         >
           aman-kumar-singh
@@ -18,7 +18,7 @@ const Header = () => {
         <Link
           className={
             "hidden pc:flex items-center justify-center px-4 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
-            (pathname === "/" ? "  border-b-[#FEA55F] border-b-[3px]" : "")
+            (pathname === "/" ? "  border-b-[#FEA55F] border-b-[2px]" : "")
           }
           href={"/"}
         >
@@ -28,7 +28,7 @@ const Header = () => {
           className={
             "hidden pc:flex items-center justify-center px-4 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/aboutMe"
-              ? "  border-b-[#FEA55F] border-b-[3px]"
+              ? "  border-b-[#FEA55F] border-b-[2px]"
               : "")
           }
           href={"/aboutMe"}
@@ -39,7 +39,7 @@ const Header = () => {
           className={
             "hidden pc:flex items-center justify-center px-4  border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/projects"
-              ? "  border-b-[#FEA55F] border-b-[3px]"
+              ? "  border-b-[#FEA55F] border-b-[2px]"
               : "")
           }
           href={"/projects"}
@@ -51,7 +51,7 @@ const Header = () => {
           className={
             "hidden pc:flex items-center justify-center px-4  border border-transparent border-l-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/contactMe"
-              ? "  border-b-[#FEA55F] border-b-[3px]"
+              ? "  border-b-[#FEA55F] border-b-[2px]"
               : "")
           }
           href={"/contactMe"}

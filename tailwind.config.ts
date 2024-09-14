@@ -21,6 +21,15 @@ const config: Config = {
         mobile: "480px",
         // => @media (min-width: 640px) { ... }
       },
+      keyframes: {
+        slideUp: {
+          "0%": { transform: "translateY(20%)" },
+          "20%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "slide-up": "slideUp 1s ease-out forwards",
+      },
     },
   },
   plugins: [],
