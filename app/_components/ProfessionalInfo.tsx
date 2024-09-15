@@ -1,24 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import AboutMeTab from "./AboutMeTab";
+import ScrollBar from "./ScrollBar";
+import usePageStore from "../_utils/usePageStore";
+import { SubPagesEnum } from "../_utils/subPageEnums";
 
 const ProfessionalInfo = () => {
+  const selectedSubPage = usePageStore((state) => state.selectedSubPage);
+
   return (
-    <div className="flex flex-col w-1/2  h-full border border-transparent border-r-borderColor">
-      <div className="w-full h-[calc(2rem+2px)] border border-transparent border-b-borderColor ">
-        {/*whatever the state of selected page, i will display it here in text*/}
-        <div className="w-fit h-full border border-transparent border-r-borderColor text-labelText text-sm flex items-center px-3">
-          {"professional-info"}
-          {/* add a close icon here */}
-          <div className="relative w-5 h-5 ml-4  cursor-pointer">
-            <Image
-              src="/close-icon.svg"
-              alt="close icon"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
+    <div className="flex flex-col w-1/2  h-full border-r  border-r-borderColor">
+      <AboutMeTab selectedPage={"professional-info"} />
+      <div className="flex flex-row h-full w-full ">
+        {(selectedSubPage === SubPagesEnum.experience && "Experience") ||
+          (selectedSubPage === SubPagesEnum.hardSkills && "Hard Skills") ||
+          (selectedSubPage === SubPagesEnum.softSkills && "Soft Skills")}
+        <ScrollBar />
       </div>
     </div>
   );

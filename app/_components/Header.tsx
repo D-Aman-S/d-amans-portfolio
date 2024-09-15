@@ -7,18 +7,20 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-row items-center w-full h-[45px] border border-transparent border-b-borderColor ">
+    <header className="flex flex-row items-center w-full h-[45px] border-b  border-b-borderColor ">
       <nav className=" w-full flex flex-row min-h-[45px]">
         <Link
-          className="flex items-center justify-center px-4 pc:w-72 pc:border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]"
+          className="flex items-center justify-start px-6 pc:w-72 pc:border-r  border-r-borderColor hover:text-white hover:bg-[#0f2031]"
           href={"/"}
         >
           aman-kumar-singh
         </Link>
         <Link
           className={
-            "hidden pc:flex items-center justify-center px-4 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
-            (pathname === "/" ? "  border-b-[#FEA55F] border-b-[2px]" : "")
+            "hidden pc:flex items-center justify-center px-4 border-r  border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
+            (pathname === "/"
+              ? "  border-b-[#FEA55F] border-b-[2px] text-white"
+              : "")
           }
           href={"/"}
         >
@@ -26,9 +28,9 @@ const Header = () => {
         </Link>
         <Link
           className={
-            "hidden pc:flex items-center justify-center px-4 border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
+            "hidden pc:flex items-center justify-center px-4 border-r  border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/aboutMe"
-              ? "  border-b-[#FEA55F] border-b-[2px]"
+              ? "  border-b-[#FEA55F] border-b-[2px] text-white"
               : "")
           }
           href={"/aboutMe"}
@@ -37,9 +39,9 @@ const Header = () => {
         </Link>
         <Link
           className={
-            "hidden pc:flex items-center justify-center px-4  border border-transparent border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
+            "hidden pc:flex items-center justify-center px-4  border-r  border-r-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/projects"
-              ? "  border-b-[#FEA55F] border-b-[2px]"
+              ? "  border-b-[#FEA55F] border-b-[2px] text-white"
               : "")
           }
           href={"/projects"}
@@ -49,9 +51,9 @@ const Header = () => {
         <div className="mx-auto"></div>
         <Link
           className={
-            "hidden pc:flex items-center justify-center px-4  border border-transparent border-l-borderColor hover:text-white hover:bg-[#0f2031]" +
+            "hidden pc:flex items-center justify-center px-4  border-l  border-l-borderColor hover:text-white hover:bg-[#0f2031]" +
             (pathname === "/contactMe"
-              ? "  border-b-[#FEA55F] border-b-[2px]"
+              ? "  border-b-[#FEA55F] border-b-[2px] text-white"
               : "")
           }
           href={"/contactMe"}
