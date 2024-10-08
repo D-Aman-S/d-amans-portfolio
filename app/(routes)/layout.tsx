@@ -30,8 +30,8 @@ export default function RootLayout({
       </head>
       <body className={firaCode.className}>
         <div
-          className="flex flex-col items-center justify-between w-full h-full 
-            bg-mainDivColor rounded-lg border border-borderColor overflow-hidden"
+          className="flex flex-col items-center justify-between w-full h-full max-h-screen
+            bg-mainDivColor rounded-lg border border-borderColor overflow-hidden "
         >
           <Header />
           {children}

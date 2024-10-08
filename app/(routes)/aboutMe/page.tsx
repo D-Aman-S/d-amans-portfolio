@@ -15,7 +15,7 @@ const AboutMe = () => {
   const selectedPage = usePageStore((state) => state.selectedPage);
 
   return (
-    <div className="w-full h-full flex flex-row items-center justify-between">
+    <div className="w-full h-full min-h-0 flex flex-row items-center justify-between">
       <div className="hidden pc:flex pc:w-[calc(18rem+1px)] pc:h-full">
         <AboutPageToggler />
         <SideNav />

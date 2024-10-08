@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -32,6 +33,32 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }: { addUtilities: any }) {
+      addUtilities({
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+        /* Hide scrollbar for IE, Edge and Firefox */
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none" /* IE and Edge */,
+          "scrollbar-width": "none" /* Firefox */,
+        },
+        '.transition-transform ':{
+          'transition': 'transform 0.5s ease-in-out'
+        }
+        ,
+        '.translate-y-full' :{
+          'transform': 'translateY(100%)'
+        }
+        ,
+        '.translate-y-0': {
+          'transform': 'translateY(0%)'
+        }
+      });
+    }),
+  ],
 };
 export default config;

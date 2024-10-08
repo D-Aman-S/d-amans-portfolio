@@ -4,7 +4,7 @@ import SnakeGame from "../_components/SnakeGame";
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex flex-row items-center justify-between">
+    <div className="w-full h-full min-h-0 flex flex-auto flex-row items-center justify-between overflow-hidden">
       {/* <div className="hidden pc:block css-blurry-gradient-blue1"></div>
 
       <div className="hidden pc:block css-blurry-gradient-green1"></div>
